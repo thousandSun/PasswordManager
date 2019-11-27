@@ -1,8 +1,10 @@
-from utils.keygen_obj import KeyGen
+from utils.thousandSunEncryption.keygen_obj import KeyGen
 from cryptography.fernet import Fernet
 
 
 class Decrypter:
+    """Uses the other two files in `thousandSunEncryption`
+    to decrypt encrypted message, modify `keygen_obj.py` to change key settings"""
     def __init__(self, password):
         try:
             self.password = password.encode()

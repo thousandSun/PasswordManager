@@ -2,6 +2,9 @@ import sqlite3
 
 
 class DatabaseConnection:
+    """
+    Connects to a given database
+    """
     def __init__(self, host):
         self.connection = None
         self.host = host
