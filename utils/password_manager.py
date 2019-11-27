@@ -1,5 +1,5 @@
 import pyperclip
-from database_connection import DatabaseConnection
+from utils.database_connection import DatabaseConnection
 from utils.thousandSunEncryption.decrypter_obj import Decrypter
 from utils.thousandSunEncryption.encrypter_obj import Encrypter
 from sqlite3 import IntegrityError
