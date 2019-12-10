@@ -35,7 +35,7 @@ class PassMng:
             return False
 
         dec = Decrypter(passwd)
-        pyperclip.copy(dec.decrypted.decode())
+        pyperclip.copy(str(dec.decrypted.decode()))
         return True
 
     def delete_pass(self):
